@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Prikaz delovanja knjižnice 1D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <h1 class="container__label">Računanje mehansko osno obremenjenega nosilca</h1>
+        <div class="container__input">
+            <form id="container__input--form">
+                <label for="fname">Prijemališče sile L [m]:</label>
+                <input type="text" id="length" name="fname" class="input">
+                <label for="lname">Osna sila n [F/m]:</label>
+                <input type="text" id="force_n" name="lname" class="input">
+                <label for="lname">Presek A [m2]:</label>
+                <input type="text" id="area" name="lname" class="input">
+                <label for="lname">Sila F [N]:</label>
+                <input type="text" id="force_F" name="lname" class="input">
+                <label for="lname">Št. končnih elementov [max 8]:</label>
+                <input type="text" id="number_el" name="lname" class="input">
+                <input type="submit" value="Reši" id="submit" class="submit__button">
+              </form> 
+        </div>
+        <div id="slika">
+        
+        </div>
+        <div class="container__chart">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+</body>
+</html>
